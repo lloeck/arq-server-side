@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser Lucas</title>
+</head>
+<body>
+    <script>
+        //Aba do navegador
+        //Título
+        //URL
+        //página (HTML, css, JavaScript)
+    
+        //Objeto: Coisas com múltiplos atributos
+        var aba1 = {
+            //atributo
+            titulo: 'Github',
+            url: 'https://github.com/lloeck',
+        };
+        var aba2 = {
+            titulo: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/lucas-baracat-loeck-74b444140/',
+        }
+    
+
+        // [ENTRADA]
+         //Array: Conjunto de objetos
+        const abas =[
+            aba1,
+            aba2,
+        ];
+
+        //[PROCESSAMENTO]
+        for(aba of abas) {
+            console.log(aba.titulo);
+        }
+
+        //[OUTPUT]
+        var valorHTML = document.body.innerHTML;
+        document.body.innerHTML = valorHTML + `<a href="${aba.url}">${aba.titulo}<a/>`;
+
+        
+   
+    </script>  
+
+
+</body>
+</html>
+
